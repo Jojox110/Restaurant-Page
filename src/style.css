@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    background-color: lightgrey;
+}
+
+#content {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-columns: 2fr 10fr;
+    grid-template-rows: 1.3fr 10fr 0.2fr;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "bottom bottom";
+}
+
+#header {
+    background-color: lightgray;
+    grid-area: header;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    font-size: 25px;
+}
+
+/*
+   Main 
+*/
+
+#main {
+    background-color: white;
+    grid-area: main;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "main-welcome"
+    "main-menu"
+    "main-careers";
+}
+
+/*
+   Main Welcome
+*/
+
+#main-welcome {
+    background-color: lightcyan;
+    grid-area: main-welcome;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-welcome #main-welcome-header-text {
+    font-size: 30px;
+}
+
+/*
+   Main Menu
+*/
+
+#main-menu {
+    background-color: lightblue;
+    grid-area: main-menu;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-menu #main-menu-button {
+    font-size: 25px;
+    border: 2px solid black;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-right: 6%;
+    padding-left: 6%;
+}
+
+/*
+   Main Careers
+*/
+
+#main-careers {
+    background-color: lightskyblue;
+    grid-area: main-careers;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-careers #main-careers-button {
+    font-size: 25px;
+    border: 2px solid black;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-right: 6%;
+    padding-left: 6%;
+}
+
+#bottom {
+    background-color: lightgray;
+    grid-area: bottom;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
